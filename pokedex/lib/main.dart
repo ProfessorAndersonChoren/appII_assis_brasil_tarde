@@ -6,13 +6,10 @@ void main() {
     MaterialApp(
       title: "Pokedex",
       home: Home(),
-      theme: ThemeData.light().copyWith(
-        colorScheme: ColorScheme.light(
-          primary: Color(0xFFE3350D),
-        ),
-        // useMaterial3: true,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: const Color(0xFFE3350D),
       ),
-      
     ),
   );
 }
